@@ -17,46 +17,47 @@
                 </div>
                 <ul>
                     <li class="item-menu">
-                        <button class="button-menu" type="submit" name="acao" value="opem">
+                        <a href="../paginas/ordem-servico.php" class="button-menu" type="submit">
                             <span class="icon"><i class="bi bi-list-check"></i></span>
                             <span class="txt-link">O.S</span>
-                        </button>
+                        </a>
                     </li>
                     <li class="item-menu">
-                        <button class="button-menu" type="submit" name="acao" value="add-cliente">
+                        <a href="../paginas/add-cliente.php" class="button-menu" type="submit">
                             <span class="icon"><i class="bi bi-person"></i></span>
                             <span class="txt-link">Cliente</span>
-                        </button>
+                        </a>
                     </li>
                     <li class="item-menu">
-                        <button class="button-menu" type="submit" name="acao" value="add-produtos">
+                        <a href="../paginas/add-produtos.php" class="button-menu" type="submit">
                             <span class="icon"><i class="bi bi-box-seam"></i></span>
                             <span class="txt-link">Produtos</span>
-                        </button>
+                        </a>
                     </li>
                     <li class="item-menu">
-                       <button class="button-menu" type="submit" name="acao" value="usuarios">
+                        <a href="../paginas/usuarios.php" class="button-menu" type="submit">
                             <span class="icon"><i class="bi bi-file-earmark-person"></i></span>
                             <span class="txt-link">Funcinário</span>
-                       </button>
+                        </a>
                     </li>
                     <li class="item-menu">
-                        <button class="button-menu" type="submit" name="acao" value="relatorio">
+                        <a href="../paginas/relatorio.php" class="button-menu" type="submit">
                             <span class="icon"><i class="bi bi-file-earmark-bar-graph"></i></span>
-                            <span class="txt-link">Relatório</span>      
-                        </button>
+                            <span class="txt-link">Relatório</span>   
+                        </a>
                     </li>
                     <li class="item-menu">
+                        <a href="../paginas/orcamento.php"></a>
                         <button class="button-menu" type="submit" name="acao" value="valores">                    
                             <span class="icon"><i class="bi bi-search"></i></span>
                             <span class="txt-link">Orçamento</span>
                         </button>
                     </li>
                     <li class="item-menu">
-                        <button class="button-menu" type="submit" name="acao" value="sair">                    
+                        <a href="../index.php" class="button-menu" type="submit">
                             <span class="icon"><i class="bi bi-arrow-return-left"></i></span>
                             <span class="txt-link">Sair</span>
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </form>
