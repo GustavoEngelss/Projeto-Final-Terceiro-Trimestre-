@@ -47,11 +47,10 @@
                         </a>
                     </li>
                     <li class="item-menu">
-                        <a href="../paginas/orcamento.php"></a>
-                        <button class="button-menu" type="submit" name="acao" value="valores">                    
+                        <a href="../paginas/orcamento.php" class="button-menu" type="submit">
                             <span class="icon"><i class="bi bi-search"></i></span>
                             <span class="txt-link">Orçamento</span>
-                        </button>
+                        </a>
                     </li>
                     <li class="item-menu">
                         <a href="../index.php" class="button-menu" type="submit">
