@@ -1,0 +1,139 @@
+.cabecalho-relatorio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(44, 43, 43);
+    padding: 25px;
+    color: white;
+    border-bottom: 4px solid rgb(255, 89, 80);
+}
+.box-info{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.box-info-single{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;    
+    color: white;
+    width: 100%;
+    flex: 0.8;
+    margin: 0 15px;
+    padding: 30px;
+}
+.box-info-single i{
+    font-size: 50px;
+}
+.graficos{
+    background-color: #ccc;
+    height: 410px;
+    display: flex;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 12px;
+}
+.grafico-quadrado{
+    background: white;
+    height: 380px;    
+    border-radius: 12px;
+    width: 750px;
+    padding: 12px;
+}
+.grafico-quadrado canvas{
+    height: 100%;
+}
+.card-graficoR{
+    background: white;
+    width: 450px;
+    height: 380px;
+    margin-left: 100px;
+    border-radius: 12px;
+    padding: 12px;
+}
+.topo{
+    height: 110px;
+    background: linear-gradient(135deg, #4099ff, #73b4ff); 
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px;
+    position: relative;
+}
+.topo h4{
+    color: white;
+    font-size: 20px;
+}
+.topo i{
+    color: white;
+    font-size: 35px;
+}
+.porcentagem{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background:
+    conic-gradient(
+        #0d6efd 0% 78%,
+        #dfe7f1 78% 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.porcentagem::before{
+    content: "";
+    width: 90px;
+    height: 90px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+}
+.porcentagem span{
+    position: relative;
+    z-index: 2;
+    font-size: 34px;
+    font-weight: bold;
+    color: #2d3a4b;
+}
+.desempenho{
+    padding: 80px 20px 20px;
+    text-align: center;
+}
+.desempenho h2{
+    color: #2d3a4b;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+.desempenho p{
+    color: #7a7a7a;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.bnt-desempenho{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #0d6efd, #4099ff);
+    color: white;
+    padding: 14px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.bnt-desempenho:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(13,110,253,0.3);
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*vai para o lado qunaod abre o menu*/
+.conteudo{
+    margin-left: 70px;
+    transition: .4s;
+}
+nav.menu-lateral.expandir ~ .conteudo{
+    margin-left: 300px;
+}

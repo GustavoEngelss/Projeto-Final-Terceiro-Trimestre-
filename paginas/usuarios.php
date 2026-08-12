@@ -7,20 +7,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../assets/css/estilo.css">
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/usuario.css">
+
 
     <title>G.A Pneus</title>
 </head>
 <body>
     <section class="conteudo">
 
-        <header class="cabecalho">
+        <header class="cabecalho-usuario">
 
             <h1>Funcionário</h1>
             <form action="../modelo/ad-produto.php" class="acao">
-                <button class="bnt-os">Adicionar Loguin</button>
+                <button class="bnt-usuario">Adicionar Loguin</button>
                 <input type="text" class="input-busca" placeholder="Pesquisar Funcionário">
             </form>
         </header>

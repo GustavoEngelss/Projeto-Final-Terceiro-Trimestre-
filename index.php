@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/estilo.css">
+    
+    <link rel="stylesheet" href="assets/css/loguin.css">
     
     <title>G.A Pneus</title>
 </head>
@@ -28,10 +30,8 @@
                 <input type="password" placeholder="Senha">
                 <i class="bi bi-lock"></i>
             </div>
-
-            <button type="submit" class="bnt-login" name="acao" value="opem">Loguin</button>
             
-
+            <a href="paginas/ordem-servico.php" type="submit" class="bnt-login" name="acao">Loguin</a>
         </form>
     </main>
 </body>

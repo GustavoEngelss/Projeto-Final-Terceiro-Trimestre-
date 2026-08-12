@@ -1,0 +1,40 @@
+.cabecalho-usuario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(44, 43, 43);
+    padding: 25px;
+    color: white;
+    border-bottom: 4px solid rgb(255, 89, 80);
+}
+.acao{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.bnt-usuario{
+    background: #28a745;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bnt-usuario:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px #24a342;
+    color: white;
+    text-decoration: none;
+}
+.table, .table th, .table td{
+    border: 2px solid #b4b3b3;
+}
+.input-busca{ 
+    width: 300px;      
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+}

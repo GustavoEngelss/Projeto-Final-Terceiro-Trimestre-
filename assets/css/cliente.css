@@ -1,0 +1,76 @@
+/*Cabeçalho da pagina add-cliente*/
+.cabecalho-clientes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(44, 43, 43);
+    padding: 25px;
+    color: white;
+    border-bottom: 4px solid rgb(255, 89, 80);
+}
+.bnt-cadastro,
+.bnt-cancelar{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bnt-cadastro{
+    background: #28a745;
+}
+.bnt-cadastro:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px #24a342;
+    color: white;
+    text-decoration: none;
+}
+.bnt-cancelar{
+    background: #dc3545;
+}
+.bnt-cancelar:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px #d43040;
+    color: white;
+    text-decoration: none;
+}
+.acao{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/*corpo do formulario da pagina add-cliente*/
+.form-add-cliente{
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.add-dados-cliente,
+.add-contato-cliente,
+.endereso{
+    width: 100%;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+}
+.add-dados-cliente .corpo-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;   
+}
+.add-contato-cliente .corpo-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;   
+}
+.endereso .corpo-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}

@@ -1,0 +1,65 @@
+/*organização do meno lateral de todas as paginas*/
+.corpo-menu{
+    height: 100%;
+    background-color: rgb(255, 253, 250);
+}
+nav.menu-lateral{
+    width: 70px;
+    height: 100%;
+    background-color: rgb(44, 43, 43);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgb(255, 89, 80);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+.bnt-expandir{
+    width: 100%;
+    padding-left: 20px 4%;
+}
+.bnt-expandir > i{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style: none;
+}
+ul li.item-menu:hover{
+    background-color: rgb(255, 89, 80);
+}
+ul li.item-menu{
+    transition: .3s;
+}
+ul li.ativo{
+    background-color: rgb(255, 89, 80);
+}
+ul li.item-menu .button-menu{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+}
+ul li.item-menu .button-menu .txt-link{
+    margin-left: 35px;
+}
+ul li.item-menu .button-menu .icon > button{
+    font-size: 30px;
+}
+.button-menu{
+    background: transparent;
+    border: none;
+}

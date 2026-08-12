@@ -3,9 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="css/estilo.css">
+        
+        <link rel="stylesheet" href="./css/menu.css">
+        <link rel="stylesheet" href="./css/global.css">
+
         <title>G.A Pneus</title>
     </head>
     <body class="corpo-menu">
@@ -13,7 +17,7 @@
         <nav class="menu-lateral">
             <form method="POST" action="../controller/princupal.php">
                 <div class="bnt-expandir">
-                    <i class="bi bi-code" id="btn-expandir"></i>
+                    <i class="bi bi-arrows" id="btn-expandir"></i>
                 </div>
                 <ul>
                     <li class="item-menu">

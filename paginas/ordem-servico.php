@@ -5,20 +5,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="../assets/css/estilo.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/ordem-servico.css">
+
 
     <title>G.A Pneus</title>
 </head>
 <body>
     <section class="conteudo">
 
-        <header class="cabecalho">
+        <header class="cabecalho-servicos">
 
             <h1>Ordem de Serviço</h1>
-            <form class="acao" method="POST"  action="../modelo/abrir-os.php">
+            <form class="acao" method="POST"  action="#">
                 <button class="bnt-os" name="acao" value="abr-os">Abrir O.S</button>
                 <input type="text" class="input-busca" placeholder="Pesquisar O.S...">
             </form>

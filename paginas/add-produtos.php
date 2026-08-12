@@ -7,20 +7,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../assets/css/estilo.css">
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/produtos.css">
 
     <title>G.A Pneus</title>
 </head>
 <body>
     <section class="conteudo">
 
-        <header class="cabecalho">
+        <header class="cabecalho-produto">
 
             <h1>Gerenciamento de Produtos</h1>
-            <form action="../modelo/ad-produto.php" class="acao">
-                <button class="bnt-os">Adicionar Produto</button>
+            <form action="#" class="acao">
+                <button class="bnt-produto">Adicionar Produto</button>
             </form>
         </header>
 
