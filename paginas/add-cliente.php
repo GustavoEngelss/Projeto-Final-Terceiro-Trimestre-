@@ -1,5 +1,7 @@
 <?php 
     require_once "../assets/menu.php";
+    require_once "../protec.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

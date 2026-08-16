@@ -57,7 +57,7 @@
                         </a>
                     </li>
                     <li class="item-menu">
-                        <a href="../index.php" class="button-menu" type="submit">
+                        <a href="../logout.php" class="button-menu" type="submit">
                             <span class="icon"><i class="bi bi-arrow-return-left"></i></span>
                             <span class="txt-link">Sair</span>
                         </a>
