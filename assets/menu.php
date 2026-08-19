@@ -27,7 +27,7 @@
                         </a>
                     </li>
                     <li class="item-menu">
-                        <a href="../paginas/add-cliente.php" class="button-menu" type="submit">
+                        <a href="../paginas/cliente.php" class="button-menu" type="submit">
                             <span class="icon"><i class="bi bi-person"></i></span>
                             <span class="txt-link">Cliente</span>
                         </a>

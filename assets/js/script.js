@@ -15,4 +15,3 @@ var menu = document.querySelector('.menu-lateral')
 btnExpande.addEventListener('click', function(){
     menu.classList.toggle('expandir')
 })
-

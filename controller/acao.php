@@ -4,7 +4,7 @@
 
     //criando usuario 
     if(isset($_POST['create_usuario'])){
-        //pega os dados do forulario e joga para o banco 
+        //pega os dados do forulario e joga para a variavel 
         $nome = mysqli_real_escape_string($mysqli, trim($_POST['nome']));
         $usuario = mysqli_real_escape_string($mysqli, trim($_POST['email']));
         $senha = isset($_POST['senha']) ?mysqli_real_escape_string($mysqli, trim($_POST['senha'])) : '';
@@ -79,5 +79,77 @@
             header('Location: ../paginas/usuario.php');
             exit;
         }
+    }
+
+    //adiionando cliente
+    if(isset($_POST['new_cliente'])){
+        $nome = mysqli_real_escape_string($mysqli, trim($_POST['nome']));
+        $cpf = mysqli_real_escape_string($mysqli, trim($_POST['cpf']));
+        $telefone = mysqli_real_escape_string($mysqli, trim($_POST['fone']));
+        $email = mysqli_real_escape_string($mysqli, trim($_POST['email']));
+        $data_nasc = mysqli_real_escape_string($mysqli, trim($_POST['data_nascimento']));
+        $genero = mysqli_real_escape_string($mysqli, trim($_POST['genero']));
+        $cep = mysqli_real_escape_string($mysqli, trim($_POST['cep']));
+        $rua = mysqli_real_escape_string($mysqli, trim($_POST['rua']));
+        $num = mysqli_real_escape_string($mysqli, trim($_POST['num']));
+        $bairro = mysqli_real_escape_string($mysqli, trim($_POST['bairro']));
+        $cidade = mysqli_real_escape_string($mysqli, trim($_POST['cidade']));
+        $estado= mysqli_real_escape_string($mysqli, trim($_POST['estado']));
+        $obs = mysqli_real_escape_string($mysqli, trim($_POST['obs']));
+
+        if(empty($nome) || empty($cpf) || empty($telefone) || empty($data_nasc) || empty($genero) || empty($cep) || empty($rua) || empty($num) || empty($bairro) || empty($cidade) || empty($estado)){
+            $_SESSION['mensagem'] = 'Preencha todos os campos obrigatorios (*)!';
+            header('Location: ../modelo/new-cliente.php');
+            exit;
+        }
+
+        $sql = "INSERT INTO clientes (nome, cpf, telefone, email, data_nascimento, genero, cep, rua, numero, bairro, cidade, estado, observacao) VALUES ('$nome', '$cpf', '$telefone', '$email', '$data_nasc', '$genero', '$cep', '$rua', '$num', '$bairro', '$cidade', '$estado', '$obs')";
+        
+        mysqli_query($mysqli, $sql);
+
+        if(mysqli_affected_rows($mysqli) > 0){
+            $_SESSION['mensagem'] = 'Cliente adicionado com sucesso';
+            header('Location: ../paginas/cliente.php');
+            exit;
+        }else{
+            $_SESSION['mensagem'] = 'Erro ao adicionar o cliente';
+            header('Location: ../modelo/new-cliente.php');
+            exit;
+        }
+    }
+
+    //pesquisa cliente
+    if(isset($_POST['select_cliente'])){
+        $cliente = mysqli_real_escape_string($mysqli, trim($_POST['cliente']));
+
+        $sql = "SELECT * FROM clientes
+            WHERE id LIKE '%$cliente%'
+            OR nome LIKE '%$cliente%'
+            OR cpf LIKE '%$cliente%'
+            OR telefone LIKE '%$cliente%'
+        ";
+        $sql_query = $mysqli->query($sql) or die("Erro na consulta! " . $mysqli->error);
+
+        if($sql_query->num_rows == 0){
+            $_SESSION['cliente_busca'] = [];
+            $_SESSION['mensagem'] = 'Nenhum resultado encontrado!';
+            header('Location: ../paginas/cliente.php');
+            exit;
+        }else{
+            $clientes = [];
+            
+            while($clienteEncontrado = $sql_query->fetch_assoc()){
+                $clientes[] = $clienteEncontrado;
+            }
+
+            $_SESSION['cliente_busca'] = $clientes;
+
+            // Marca que acabou de fazer uma pesquisa
+            $_SESSION['pesquisa_realizada'] = true;
+
+            header('Location: ../paginas/cliente.php');
+            exit;
+        }
+            
     }
 ?>

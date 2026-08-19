@@ -28,7 +28,6 @@
             <h1>Lista de Usuários</h1>
             <form action="../modelo/add-usuario.php" class="acao">
                 <button class="bnt-usuario">Adicionar Loguin</button>
-                <input type="text" class="input-busca" placeholder="Pesquisar Funcionário">
             </form>
         </header>
 
